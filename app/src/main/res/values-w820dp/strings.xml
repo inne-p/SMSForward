@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="labelSubmit">Submit</string>
+    <string name="labelRemove" >Remove</string>
+    <string name="labelHome">Your phone number verification :</string>
+    <string name="labelWarn">* The Application will send message verification through your current phone number. Make sure you input the valid phone number.</string>
+</resources>

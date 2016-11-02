@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:scrollIndicators="left">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/app_icon"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appName"
+                android:id="@+id/textView"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/labelPhone"
+                android:id="@+id/labelPhoneHome"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="30dp"
+                android:layout_alignLeft="@+id/inputNumber"
+                android:layout_alignStart="@+id/inputNumber"
+                android:layout_alignRight="@+id/inputNumber"
+                android:layout_alignEnd="@+id/inputNumber" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputNumber"
+                android:inputType="phone"
+                android:layout_below="@+id/labelPhoneHome"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/hintNumber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/labelWarn"
+                android:id="@+id/textView2"
+                android:textAlignment="textStart"
+                android:layout_below="@+id/inputNumber"
+                android:layout_alignLeft="@+id/inputNumber"
+                android:layout_alignStart="@+id/inputNumber"
+                android:layout_alignRight="@+id/inputNumber"
+                android:layout_alignEnd="@+id/inputNumber"
+                android:layout_marginBottom="50dp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/labelSubmit"
+                android:id="@+id/buttonSubmit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

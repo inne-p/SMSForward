@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SMS Ahok</string>
+    <string name="appName">SMS Ahok Application</string>
+    <string name="labelPhone">Insert your phone number for verification</string>
+    <string name="labelWarn">* The Application will send message verification through your current phone number. Make sure you input the valid phone number.</string>
+    <string name="labelSubmit">Submit</string>
+    <string name="labelRemove" >Remove</string>
+    <string name="labelHome">Your phone number verification :</string>
+    <string name="hintNumber">08XXXXXXXXXXXXX</string>
+</resources>
